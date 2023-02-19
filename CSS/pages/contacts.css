@@ -1,0 +1,160 @@
+.page {
+  margin: 0;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.hdr {
+  display: flex;
+  box-sizing: border-box;
+  background-color: #213b7e;
+  margin: 0 auto;
+  width: 1300px;
+  padding: 0 15px;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 80px;
+}
+
+.smenu {
+  display: flex;
+  font-family: "Roboto";
+  align-self: stretch;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  flex-wrap: wrap;
+}
+
+.smenu > li {
+  display: flex;
+}
+
+.menul {
+  display: flex;
+  align-items: center;
+  padding: 0 18px;
+  background-color: #213b7e;
+  color: #ffffff;
+  text-decoration-line: underline;
+  font-weight: 400;
+  font-size: 20px;
+}
+
+.login-but {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 18px;
+  color: #ffffff;
+  text-decoration: none;
+  background-color: #ea5d21;
+  width: 153px;
+  height: 50px;
+  left: 1201px;
+  top: 15px;
+  font-family: "Roboto";
+}
+
+.menul:hover {
+  text-decoration: none;
+  background-color: #ffffff;
+  color: #213b7e;
+}
+
+.actual-link {
+  color: #213b7e;
+  background-color: #ffffff;
+  text-decoration: none;
+}
+
+.content {
+  width: 1300px;
+  height: 80px;
+  left: 70px;
+  margin: 0 auto;
+  flex-grow: 1;
+}
+
+/*footer*/
+
+.foot {
+  position: sticky;
+  width: 1300px;
+  min-height: 60px;
+  left: calc(50% - 1300px / 2);
+  top: calc(50% - 60px / 2 + 510px);
+  background: #213b7e;
+  box-sizing: border-box;
+  margin: 0 auto;
+  padding: 0 16px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  flex: content;
+  align-items: center;
+}
+
+.dog {
+  color: rgba(255, 255, 255, 0.5);
+
+  width: 211px;
+  height: 23px;
+  left: 615px;
+  top: 1038px;
+
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 23px;
+  display: flex;
+  align-items: center;
+}
+
+.text {
+  color: #cf5510;
+}
+
+.dog2 {
+  color: rgba(255, 255, 255, 0.5);
+  font-family: "Roboto";
+}
+
+/* media queries */
+
+@media (max-width: 1300px) {
+  .hdr {
+    max-width: 970px;
+  }
+  .content {
+    max-width: 970px;
+  }
+  .foot {
+    max-width: 970px;
+  }
+}
+
+@media (max-width: 992px) {
+  .hdr {
+    max-width: 750px;
+  }
+  .content {
+    max-width: 750px;
+  }
+  .foot {
+    max-width: 750px;
+  }
+}
+
+@media (max-width: 767px) {
+  .hdr {
+    width: unset;
+  }
+  .content {
+    width: unset;
+  }
+  .foot {
+    width: unset;
+  }
+}
